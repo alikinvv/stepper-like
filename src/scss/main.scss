@@ -1,0 +1,131 @@
+@charset 'UTF-8';
+@import 'mixins';
+
+/*** MIXINS USAGE ***
+
+	@include font-face('fontName', '../fonts/fontPath/fontName', normal); 
+
+	@include xs(12);
+	@include sm(12);
+	@include md(12);
+	@include lg(12);
+
+	@include r(768);
+	@include rmin(768);
+
+	@include trans / trans($what $dur $easing);
+	@include cover;
+
+	@include centerX / centerXa
+	@include centerY / centerYa
+
+	@include overlay($opacity)
+***/
+
+.icon {
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	font-size: 30px;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #231F20;
+	font-size: 20px;
+	background: #FFF3F5;
+}
+
+.wrap {
+	position: relative;
+	
+	&.like {
+		.stepper {
+			background: #FF6F62;
+
+			svg {
+				fill: #fff;
+			}
+		}
+
+		.count {
+			color: #FF6F62;
+		}
+	}
+}
+
+.stepper {
+	margin-top: -65px;
+	margin-left: -65px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	cursor: pointer;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 64px;
+	position: relative;
+	box-shadow: -1px 57px 80px -17px rgba(255, 73, 87, 0.25);
+	z-index: 2;
+
+	&::before {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		background: #fff;
+		border-radius: 50%;
+		z-index: 1;
+	}
+
+	svg {
+		position: absolute;
+		top: 37px;
+		left: 37px;
+		fill: #FF6F62;
+		z-index: 2;
+	}
+
+	.circle {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: scale(0);
+		background: #fff;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		z-index: 1;
+
+		&.white {
+			background: #fff;
+		}
+
+		&.pink {
+			background: #FF6F62;
+		}
+	}
+}
+
+.count {
+	position: absolute;
+    right: -71px;
+    top: 47px;
+    color: #ffc8c4;
+    font-size: 36px;
+}
