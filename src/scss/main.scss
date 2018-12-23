@@ -46,6 +46,7 @@ body {
 
 .wrap {
 	position: relative;
+	margin-top: 65px;
 	
 	&.like {
 		.stepper {
@@ -127,5 +128,6 @@ body {
     right: -71px;
     top: 47px;
     color: #ffc8c4;
-    font-size: 36px;
+	font-size: 36px;
+	user-select: none;
 }
