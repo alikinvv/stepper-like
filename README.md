@@ -6,5 +6,5 @@
 
 ## [Live Demo](https://alikinvv.github.io/stepper-like/build/)
 
-![stepper like](https://cdn.dribbble.com/users/1773016/screenshots/5758564/2.gif)
+![stepper like](https://cdn.dribbble.com/users/1773016/screenshots/5742638/1.gif)
 
