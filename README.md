@@ -8,3 +8,4 @@
 
 ![stepper like](https://cdn.dribbble.com/users/1773016/screenshots/5742638/1.gif)
 
+[![Analytics](https://ga-beacon.appspot.com/UA-31485994-5/stepper-like)](https://github.com/alikinvv/stepper-like)
